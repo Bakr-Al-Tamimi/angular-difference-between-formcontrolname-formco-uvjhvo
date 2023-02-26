@@ -1,0 +1,23 @@
+<h3>formControlName</h3>
+<form [formGroup]="formGroup">
+  <input type="text" formControlName="firstName" /><br/>
+  <input type="text" formControlName="lastName" /><br/>
+  <input type="text" formControlName="email" /><br/>
+  <input type="text" formControlName="title" /><br/>
+  <pre>{{formGroup.value | json}}</pre>
+</form>
+
+<hr>
+
+<h3>formControl</h3>
+<div>
+  <input type="text" [formControl]="f.firstName" /><br/>
+  <input type="text" [formControl]="f.lastName" /><br/>
+  <input type="text" [formControl]="f.email" /><br/>
+  <input type="text" [formControl]="f.title" /><br/>
+  <pre>{{formGroup.value | json}}</pre>
+</div>
+
+<hr>
+
+<h3>Author: DaiDH</h3>
